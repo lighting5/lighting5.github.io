@@ -1,0 +1,17 @@
+{
+  "name": "vuepress",
+  "version": "2.0.0",
+  "description": "code is life",
+  "repository": "git@github.com:light5",
+  "author": "code is life",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "start": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "dependencies": {
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-theme-reco": "2.0.0-beta.67"
+  }
+}
