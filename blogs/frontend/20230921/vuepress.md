@@ -172,7 +172,7 @@ export default defineUserConfig({
   :::
 
 2. 然后，将你的仓库克隆到本地，再将你的vuepress项目拷贝到仓库根目录下，然后将仓库推送到github的master主分支上。
-3. 另外还需要创建另一个分支用来发布博客静态页面 `gh-pages`，可以在你的项目根目录下新建deploy.sh脚本，内容如下：
+3. 另外还需要创建另一个分支用`gh-pages`来发布博客静态页面，可以在你的项目根目录下新建deploy.sh脚本，内容如下：
 
 ```sh
   # 确保脚本抛出遇到的错误
@@ -193,6 +193,8 @@ export default defineUserConfig({
   # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
   # 如果发布到 https://<USERNAME>.github.io/<REPO>
+  # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master:gh-pages
+  # 我的配置如下
   git push -f https://github.com/lighting5/lighting5.github.io.git master:gh-pages
 
   cd -
